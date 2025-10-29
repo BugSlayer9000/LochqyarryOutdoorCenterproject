@@ -1,0 +1,1043 @@
+@import url("https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Bangers&family=Irish+Grover&family=Milonga&display=swap");
+
+/* Colors */
+/* #6CA6D9  Blue*/
+/*#ACD1F2 Lightblue  */
+/* #04D94F Light Green */
+/* #888C03 darkyellow */
+/* #D9BFA9 cream */
+
+.bangers-regular {
+  font-family: "Bangers", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(245, 245, 245);
+}
+
+/* Index ####################################################################################################################################################### */
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  transition: 0.3s;
+  text-align: center;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-div1,
+.nav-div2 {
+  width: 35%;
+  display: inherit;
+  flex-direction: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+}
+
+.nav-div1 ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.nav-div1 li a {
+  text-decoration: none;
+  color: #1b5d97;
+  font-family: "Atma";
+  font-weight: 500;
+  font-size: xx-large;
+}
+
+nav img {
+  display: block;
+  width: 290px;
+}
+
+.nav-div2 {
+  justify-content: space-around;
+}
+
+.nav-div2 a {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: "Atma";
+  font-weight: 500;
+  font-size: xx-large;
+  text-decoration: none;
+  color: #1b5d97;
+}
+
+.nav-div2 img {
+  width: 50px;
+}
+
+.navimg {
+  display: block;
+}
+
+/* Scroll Effects */
+
+.navbar.scrolled {
+  background-color: rgb(236, 236, 236);
+}
+
+.navbar.scrolled .navimg {
+  display: none;
+}
+
+/* first section */
+
+.divmain {
+  margin-top: 15vh;
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0) 50%
+    ),
+    url(../imgs/index/robert-collins-tvc5imO5pXk-unsplash-min.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 15px),
+    80% 100%,
+    17% calc(100% - 20px),
+    0% calc(100% - 12px)
+  );
+}
+
+.divmain h2 {
+  color: #acd1f2;
+  font-family: "DynaPuff";
+  font-size: 5rem;
+  width: 30%;
+  margin-left: 2%;
+  letter-spacing: 3px;
+}
+
+/* middle section */
+
+.mid-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 70vh;
+}
+
+.mid-div-d1 {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.mid-div-d2 {
+  width: 80%;
+  margin: auto;
+}
+
+.mid-div-d1 {
+  flex-direction: row;
+}
+
+.mid-div-d1 h2,
+.mid-div-d2 h2 {
+  font-family: "Atma";
+  color: #1b5d97;
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.mid-div-d1 p,
+.mid-div-d2 p {
+  font-family: "delius";
+  font-size: 1.5rem;
+  color: rgb(43, 43, 43);
+  font-weight: 300;
+}
+
+.mid-div-d2 h2 {
+  font-size: 2.5rem;
+}
+
+.mid-div-d2 a {
+  text-decoration: none;
+  color: #cc915e;
+}
+
+/* Bottem section */
+
+.bottem-div {
+  height: 75vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.bottem-div-d1 {
+  width: 30%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+}
+
+.bottem-div-d1 img {
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  width: 90%;
+  margin: 0 auto;
+  clip-path: polygon(
+    72.5% 3.5%,
+    100.1% 0%,
+    100% 43%,
+    100.1% 97.5%,
+    68% 100.3%,
+    32.3% 96.5%,
+    0% 100.3%,
+    0% 43%,
+    0% 0%
+  );
+  transition: 1s all ease-in-out;
+}
+
+.bottem-div-d1 h3 {
+  font-family: "Bangers";
+  font-size: 2.074rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+  color: #6ca6d9;
+  margin-left: 5%;
+}
+
+.bottem-div-d1 p {
+  font-family: "Comic Neue";
+  font-size: 1.2rem;
+  font-weight: 500;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.bottem-div-d1 a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-family: "Delius";
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+  z-index: 1;
+  overflow: hidden;
+  border: 2px solid #acd1f2;
+  width: 70%;
+  height: 7%;
+  border-radius: 23px;
+  background-color: #acd1f2;
+  transition: all ease 0.4s;
+}
+
+.bottem-div-d1 a:hover {
+  background-color: #1b5d97;
+  border: #1b5d97;
+  color: white;
+  transition: 200ms ease-in-out;
+  box-shadow: 2px 4px 18px 0px #000000;
+  letter-spacing: 2px;
+}
+
+/* comment section */
+
+.comment-sec {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-bottom: 2vh;
+}
+
+.comment-sec h2 {
+  font-family: "Bangers";
+  font-size: 2.394rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+  color: #1b5d97;
+  width: 90%;
+  margin-left: 3%;
+}
+
+.comment-sec-d1,
+.comment-sec-d2,
+.comment-sec-d3 {
+  width: 52%;
+  height: 12vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10%;
+}
+
+.comment-sec-d1 h5,
+.comment-sec-d2 h5,
+.comment-sec-d3 h5 {
+  font-family: "Roboto";
+  font-size: 1.44rem;
+  width: 100%;
+  font-family: "Atma";
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.comment-sec-d1 p,
+.comment-sec-d2 p,
+.comment-sec-d3 p {
+  font-family: "Comic Neue";
+  font-size: 1.2rem;
+}
+
+.comment-sec-d1 p,
+.comment-sec-d2 p,
+.comment-sec-d3 p,
+.comment-sec-d1 h5,
+.comment-sec-d2 h5,
+.comment-sec-d3 h5,
+.star-rating {
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+.star-rating {
+  display: flex;
+  margin-top: 5px;
+}
+
+.star-rating img {
+  width: 15px;
+}
+
+/* footer */
+
+footer {
+  height: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #acd1f2;
+}
+
+footer img {
+  height: 80%;
+}
+
+.footer-d1 {
+  margin-top: 10px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+
+.footer-d1::before {
+  content: "Designed and devoloped by Samod";
+  position: absolute;
+  display: block;
+  right: 0;
+  /* margin-top: 100%; */
+  /* bottom: 0; */
+  /* top: 0; */
+  margin: 157px 31px 0px 0px;
+  font-family: "Delius";
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.footer-div {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+}
+
+.footer-div p {
+  font-family: "Comic Neue";
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.social {
+  width: 40%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.social a {
+  width: auto;
+}
+
+.social img {
+  width: 30px;
+}
+
+.nav-div3{
+  display: none;
+}
+
+@media only screen 
+   and (max-width : 768px) {
+   nav img{
+    width: 230px;
+   }
+   .nav-div1,.nav-div2{
+    display: none;
+   }
+   .navbar{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+   .nav-div3{
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   }
+   .nav-div3 ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+   }
+   .nav-div3 ul li{
+    list-style: none;
+   }
+   .nav-div3 ul li a{
+    text-decoration: none;
+    text-decoration: none;
+    color: #1b5d97;
+    font-family: "Atma";
+    font-weight: 500;
+    font-size: x-large;
+   }
+   .divmain{
+    margin-top: 17vh;
+    width: 108%;
+    background-position: center;
+    align-items: flex-end;
+    background-position: calc(center - 100px);
+   }
+   .divmain h2{
+    font-size: 3rem;
+    width: 50%;
+    margin-bottom: 50px;
+   }
+
+   .mid-div-d1{
+    border: 2px solid black;
+    width: 100%;
+    flex-direction: column;
+   }
+   .mid-div-d1 h2, .mid-div-d2 h2{
+    font-size: 2.5rem;
+   }
+   .mid-div-d1 p, .mid-div-d2 p{
+    font-size: 1.2rem;
+   }
+
+   
+}
+
+/* Land Based Activities ################################################################################################################################################################################################################################### */
+
+.activities-bg {
+  margin-top: 15vh;
+  height: 55vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(243, 243, 243, 0.7) 0%,
+      rgba(234, 234, 234, 0) 50%
+    ),
+    url(../imgs/imgs/hillwalking-min.jpg);
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 15px),
+    80% 100%,
+    17% calc(100% - 20px),
+    0% calc(100% - 12px)
+  );
+}
+
+.bg-d1 {
+  margin-left: 3%;
+  margin-bottom: 2%;
+}
+
+.bg-d1 h1 {
+  font-family: "DynaPuff";
+  font-size: 4rem;
+  color: #1c4061;
+  margin-left: 2%;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+.bg-d1 p {
+  font-family: "Comic Neue";
+  margin-left: 2%;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.land-mid-d1 {
+  height: 21vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+.land-mid-d1-d2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+}
+
+.land-mid-d1-d2 h2 {
+  font-family: "Atma";
+  color: #1b5d97;
+  font-size: 2.25rem;
+}
+
+.land-mid-d1-d2 p {
+  font-family: "delius";
+  font-size: 1.5rem;
+  color: rgb(43, 43, 43);
+  font-weight: 300;
+}
+
+/* .land-mid-d1::after{
+  content: "";
+  display: block;
+  background-color: #349bb2;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  transition: 0.5s all ease;
+  margin: auto;
+  margin-top: 2px;
+} */
+
+.land-mid-d1-d1 {
+  display: flex;
+}
+
+/* Land Based  */
+
+.land-based {
+  display: flex;
+  height: 116vh;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+  margin-top: 5vh;
+  border-radius: 30px;
+  background-color: #e7e7e7;
+}
+
+.land-based h2 {
+  width: 100%;
+  text-align: center;
+  font-family: "Atma";
+  color: #1b5d97;
+  font-size: 2.25rem;
+}
+
+.landbased-d1-d1 {
+  width: 34%;
+  height: 52%;
+}
+
+.landbased-d1-d1 img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  width: 90%;
+  margin: 12px;
+  height: 45%;
+  clip-path: polygon(
+    72.5% 3.5%,
+    100.1% 0%,
+    100% 43%,
+    100.1% 97.5%,
+    68% 100.3%,
+    32.3% 96.5%,
+    0% 100.3%,
+    0% 43%,
+    0% 0%
+  );
+}
+
+.landbased-d1-d1 h4 {
+  font-family: "Bangers";
+  font-size: 2.074rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+  color: #1b5d97;
+}
+
+.landbased-d1-d1 p {
+  font-family: "Comic Neue";
+  font-size: 1.2rem;
+  font-weight: 500;
+  width: 95%;
+}
+
+.landbased-d1-d1 ul {
+  /* display: flex;
+  justify-content: space-evenly;
+  gap: 40%;
+  align-items: center;
+  margin-top: 15px; */
+  display: flex;
+  justify-content: space-between;
+  /* gap: 40%; */
+  align-items: center;
+  margin-top: 15px;
+  width: 90%;
+}
+
+.landbased-d1-d1 li {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+  font-family: "Roboto";
+}
+
+.landbased-d1-d1 li a {
+  border: 2px solid #4545455c;
+  height: 41px;
+  width: 111px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-family: "Roboto";
+  letter-spacing: 1.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #1b5d97;
+  transition: 500ms ease-in-out;
+}
+
+.landbased-d1-d1 li a:hover {
+  background-color: #6ca6d9;
+  color: black;
+  box-shadow: 0px 4px 39px 11px #6ca6d9, 5px 5px 10px 1px #6ca6d9,
+    5px 5px 10px 1px #6ca6d9;
+}
+
+.landbased-d1-d1 li p {
+  font-family: "Roboto";
+  width: 100%;
+}
+
+/* safety instruction part */
+
+.safty-instruction-land {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 89vh;
+  width: 140vh;
+  margin: auto;
+  margin-top: 3vh;
+}
+
+.safty-instruction-land h2 {
+  width: 100%;
+  font-family: "Bangers";
+  font-size: 3.074rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+  color: #1b5d97;
+  text-align: center;
+}
+
+.safe-d1 {
+  height: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.safety-d1 {
+  border-radius: 30px;
+  width: 94%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: fit-content;
+  flex-direction: column;
+  margin: 10px;
+  transition: 500ms all ease-in-out;
+}
+
+.safety-d1:hover {
+  transform: scale(1.1);
+  border: 1px solid rgba(112, 112, 112, 0.438);
+  background-color: rgba(224, 224, 224, 0.438);
+}
+
+/* .safe-d1:hover .safety-d1:not(:hover) {
+  filter: blur(10px);
+  transform: scale(0.9);
+} */
+
+.safety-d1:hover.safety-d1 h5 {
+  letter-spacing: 2px;
+}
+
+.safety-d1 h5 {
+  width: 50%;
+  font-family: "Bangers";
+  font-size: 2rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+  color: #6ca6d9;
+  text-align: center;
+}
+
+.safety-d1 ul {
+  width: 80%;
+  margin: 10px;
+}
+
+.safety-d1 li {
+  font-family: "Comic Neue";
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* ROPE BASED ACTIVITIES ################################################################################################################################################################################################################################ */
+
+.activities-bg1 {
+  margin-top: 15vh;
+  height: 55vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(243, 243, 243, 0.7) 0%,
+      rgba(234, 234, 234, 0) 50%
+    ),
+    url(../imgs/imgs/adsailing1.jpg);
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 15px),
+    80% 100%,
+    17% calc(100% - 20px),
+    0% calc(100% - 12px)
+  );
+}
+
+.rope-based {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* ROPE BASED ACTIVITIES ################################################################################################################################################################################################################################ */
+
+.activities-bg2 {
+  margin-top: 15vh;
+  height: 55vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(243, 243, 243, 0.7) 0%,
+      rgba(234, 234, 234, 0) 50%
+    ),
+    url(../imgs/imgs/water.jpg);
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 15px),
+    80% 100%,
+    17% calc(100% - 20px),
+    0% calc(100% - 12px)
+  );
+}
+
+/* ABout US page  ################################################################################################################################################################################################################################ */
+
+.aboutus-intro {
+  border: 2px solid #6ca6d9;
+  background-color: #89aece;
+  margin-top: 15vh;
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.aboutus-intro h2 {
+  font-family: "DynaPuff";
+  font-size: 4rem;
+  color: #1c4061;
+  margin-left: 2%;
+  letter-spacing: 3px;
+  font-weight: 600;
+  text-align: center;
+}
+.aboutus-intro h2 span {
+  font-family: "Roboto";
+  font-size: 2rem;
+}
+
+.about-us-d1 {
+  display: flex;
+  height: 75%;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+}
+
+.first-content p,
+.first-content2 p,
+.first-content3 p {
+  margin: 20px;
+  font-family: "Roboto";
+  font-size: 1.7rem;
+  color: black;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.flip-card {
+  /* background-color: #6ca6d9; */
+  height: 80%;
+  width: 25%;
+  transition: all 0.4s;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.flip-card:hover {
+  /* background-color: #1b5d97; */
+  transform: scale(1.1);
+  border-radius: 30px;
+}
+
+.first-content,
+.first-content2,
+.first-content3 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: 100%;
+  transition: all 0.4s;
+  background-image: linear-gradient(0deg, #a6a6a6b0 0%, #ffffff00 51%),
+    url(../imgs/Coches/4.jpg);
+  background-position: center;
+  object-position: center;
+  object-fit: contain;
+  background-size: cover;
+}
+
+.first-content2 {
+  background-image: linear-gradient(0deg, #a6a6a6b0 0%, #ffffff00 51%),
+    url(../imgs/Coches/6.jpg);
+}
+
+.first-content3 {
+  background-image: linear-gradient(0deg, #a6a6a6b0 0%, #ffffff00 51%),
+    url(../imgs/Coches/7.jpg);
+}
+
+.flip-card:hover .first-content {
+  height: 0%;
+  opacity: 0;
+}
+
+.flip-card:hover .first-content2 {
+  height: 0%;
+  opacity: 0;
+}
+
+.flip-card:hover .first-content3 {
+  height: 0%;
+  opacity: 0;
+}
+
+.second-content {
+  background-color: #acd1f2;
+  height: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+.flip-card:hover .second-content {
+  height: 100%;
+  opacity: 1;
+}
+
+.second-content p {
+  width: 80%;
+  font-family: "Roboto";
+  font-size: 1.2rem;
+  color: black;
+  font-weight: 500;
+}
+
+/* Call us section */
+
+.call-us {
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 70%;
+}
+
+.intro h2 {
+  width: 100%;
+  font-family: "Bangers";
+  font-size: 3.074rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+  color: #1b5d97;
+  text-align: center;
+}
+
+.intro p,
+.callus p {
+  font-family: "Roboto";
+  font-size: 1.5rem;
+  color: rgb(43, 43, 43);
+  font-weight: 400;
+  /* letter-spacing: 1px; */
+  line-height: 36px;
+}
+
+.Call {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+
+.Call img {
+  width: 50px;
+}
+
+.callus {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100px;
+  width: 250px;
+  background-color: #6ca6d9;
+  border-radius: 20px;
+  transition: all 0.4s;
+}
+
+.callus:hover {
+  background-color: #88bae6;
+  transform: scale(1.1);
+  cursor: pointer;
+  box-shadow: 0px 0px 48px 9px #7bb1e0, 5px 5px 10px 1px #7bb1e0;
+  border: 1px solid #1b5d97;
+}
+
+.callus:hover .callus p {
+  letter-spacing: 1px;
+}
+
+/* Forum for about us page */
+
+.book-your-activity {
+  border: 2px solid black;
+  height: 50vh;
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.book-your-activity h2 {
+  width: 100%;
+  font-family: "Bangers";
+  font-size: 3.074rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+  color: #1b5d97;
+  text-align: center;
+}
+
+.book-d1 {
+  border: 2px solid black;
+}
+
